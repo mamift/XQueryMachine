@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <OutputType>Library</OutputType>
     <RootNamespace>DataEngine</RootNamespace>
     <PublishUrl>publish\</PublishUrl>
@@ -145,9 +145,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Ado\Command.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Update="Ado\Command.cs" />
     <Compile Update="Parser\SQL92-min.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -179,6 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoreServices\CoreServices.csproj" />
+    <ProjectReference Include="..\Metadata.W3cXsd2001\Metadata.W3cXsd2001.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />

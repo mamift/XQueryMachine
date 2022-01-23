@@ -23,7 +23,6 @@ using System.Linq;
 using System.Text;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.IO;
 using System.Xml;
 using System.Data;
@@ -31,6 +30,7 @@ using System.Data;
 using DataEngine.CoreServices;
 using DataEngine.CoreServices.Data;
 using System.Collections;
+using Metadata.W3cXsd2001;
 
 namespace DataEngine
 {
