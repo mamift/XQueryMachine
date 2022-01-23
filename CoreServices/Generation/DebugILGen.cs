@@ -356,9 +356,11 @@ namespace DataEngine.CoreServices.Generation
         /// <summary>
         /// Marks a sequence point.
         /// </summary>
-        public override void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn) {
-            WriteImpl(String.Format(CultureInfo.CurrentCulture, ".seq {0}:{1}-{2}:{3}", startLine, startColumn, endLine, endColumn));
-            base.MarkSequencePoint(document, startLine, startColumn, endLine, endColumn);
+        public override void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn)
+        {
+            throw new NotSupportedException("Not supported in .NET Core/Standard");
+            //WriteImpl(String.Format(CultureInfo.CurrentCulture, ".seq {0}:{1}-{2}:{3}", startLine, startColumn, endLine, endColumn));
+            //base.MarkSequencePoint(document, startLine, startColumn, endLine, endColumn);
         }
 
         /// <summary>

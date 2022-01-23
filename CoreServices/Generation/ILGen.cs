@@ -271,8 +271,10 @@ namespace DataEngine.CoreServices.Generation {
         /// <summary>
         /// Marks a sequence point.
         /// </summary>
-        public virtual void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn) {
-            _ilg.MarkSequencePoint(document, startLine, startColumn, endLine, endColumn);
+        public virtual void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn)
+        {
+            throw new NotSupportedException("Not supported in .NET Core/Standard");
+            //_ilg.MarkSequencePoint(document, startLine, startColumn, endLine, endColumn);
         }
 
         /// <summary>
