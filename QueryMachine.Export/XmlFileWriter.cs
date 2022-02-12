@@ -19,6 +19,7 @@ using System.Xml.XPath;
 using DataEngine.CoreServices;
 using DataEngine.CoreServices.Data;
 using DataEngine;
+using ValueTuple = DataEngine.CoreServices.Data.ValueTuple;
 
 namespace DataEngine.Export
 {

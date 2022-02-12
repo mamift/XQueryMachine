@@ -20,6 +20,8 @@ using System.Xml;
 using DataEngine.CoreServices;
 using DataEngine.CoreServices.Data;
 
+using ValueTuple = DataEngine.CoreServices.Data.ValueTuple;
+
 namespace DataEngine
 {
 

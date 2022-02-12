@@ -19,7 +19,7 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Reflection.Emit;
-using System.Runtime.InteropServices;
+//using System.Runtime.InteropServices;
 using System.Text;
 
 namespace DataEngine.CoreServices.Generation
@@ -315,7 +315,7 @@ namespace DataEngine.CoreServices.Generation
         /// <summary>
         /// Emits an unmanaged indirect call instruction.
         /// </summary>
-        public override void EmitCalli(OpCode opcode, CallingConvention unmanagedCallConv, Type returnType, Type[] parameterTypes) {
+        public override void EmitCalli(OpCode opcode, CallingConventions unmanagedCallConv, Type returnType, Type[] parameterTypes) {
             StringBuilder sb = new StringBuilder();
             sb.Append(opcode.ToString());
             sb.Append('\t');
@@ -356,9 +356,11 @@ namespace DataEngine.CoreServices.Generation
         /// <summary>
         /// Marks a sequence point.
         /// </summary>
-        public override void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn) {
-            WriteImpl(String.Format(CultureInfo.CurrentCulture, ".seq {0}:{1}-{2}:{3}", startLine, startColumn, endLine, endColumn));
-            base.MarkSequencePoint(document, startLine, startColumn, endLine, endColumn);
+        public override void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn)
+        {
+            throw new NotSupportedException("Not supported in .NET Core/Standard");
+            //WriteImpl(String.Format(CultureInfo.CurrentCulture, ".seq {0}:{1}-{2}:{3}", startLine, startColumn, endLine, endColumn));
+            //base.MarkSequencePoint(document, startLine, startColumn, endLine, endColumn);
         }
 
         /// <summary>

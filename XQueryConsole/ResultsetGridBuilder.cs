@@ -21,6 +21,7 @@ using System.Data;
 using DataEngine;
 using DataEngine.CoreServices;
 using DataEngine.CoreServices.Data;
+using ValueTuple = DataEngine.CoreServices.Data.ValueTuple;
 
 namespace WmHelp.XmlGrid
 {

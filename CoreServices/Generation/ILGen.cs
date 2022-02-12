@@ -21,7 +21,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 
-using System.Runtime.InteropServices;
+//using System.Runtime.InteropServices;
 
 
 namespace DataEngine.CoreServices.Generation {
@@ -256,8 +256,8 @@ namespace DataEngine.CoreServices.Generation {
         /// <summary>
         /// Emits an unmanaged indirect call instruction.
         /// </summary>
-        public virtual void EmitCalli(OpCode opcode, CallingConvention unmanagedCallConv, Type returnType, Type[] parameterTypes) {
-            _ilg.EmitCalli(opcode, unmanagedCallConv, returnType, parameterTypes);
+        public virtual void EmitCalli(OpCode opcode, CallingConventions unmanagedCallConv, Type returnType, Type[] parameterTypes) {
+            _ilg.EmitCalli(opcode, unmanagedCallConv, returnType, parameterTypes, Array.Empty<Type>());
         }
 
         /// <summary>
@@ -271,8 +271,10 @@ namespace DataEngine.CoreServices.Generation {
         /// <summary>
         /// Marks a sequence point.
         /// </summary>
-        public virtual void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn) {
-            _ilg.MarkSequencePoint(document, startLine, startColumn, endLine, endColumn);
+        public virtual void MarkSequencePoint(ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn)
+        {
+            throw new NotSupportedException("Not supported in .NET Core/Standard");
+            //_ilg.MarkSequencePoint(document, startLine, startColumn, endLine, endColumn);
         }
 
         /// <summary>

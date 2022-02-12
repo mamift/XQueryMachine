@@ -105,14 +105,16 @@ namespace DataEngine.CoreServices.Generation
 
             MethodBuilder builder = method as MethodBuilder;
             if (builder != null) {
-                result.Append(builder.Signature);
-                return;
+                throw new NotSupportedException($"Formatting the signature of a {nameof(MethodBuilder)} is not supported in .NET Core/Standard port");
+                //result.Append(builder.Signature);
+                //return;
             }
 
             ConstructorBuilder cb = method as ConstructorBuilder;
             if (cb != null) {
-                result.Append(cb.Signature);
-                return;
+                throw new NotSupportedException($"Formatting the signature of a {nameof(ConstructorBuilder)} is not supported in .NET Core/Standard port");
+                //result.Append(cb.Signature);
+                //return;
             }
 
             FormatTypeName(result, method.DeclaringType);

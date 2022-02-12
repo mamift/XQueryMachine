@@ -16,6 +16,7 @@ using MongoDB.Bson;
 using DataEngine;
 using DataEngine.CoreServices;
 using DataEngine.CoreServices.Data;
+using ValueTuple = DataEngine.CoreServices.Data.ValueTuple;
 
 #if JS
 using Noesis.Javascript;

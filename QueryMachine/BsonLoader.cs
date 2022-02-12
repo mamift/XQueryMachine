@@ -14,6 +14,7 @@ using MongoDB.Bson;
 using DataEngine.CoreServices;
 using DataEngine.CoreServices.Data;
 
+using ValueTuple = DataEngine.CoreServices.Data.ValueTuple;
 
 namespace DataEngine
 {
