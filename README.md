@@ -1,5 +1,13 @@
 # QueryMachine
 
+**NOTE: This is a fork of the [qm](https://github.com/semyonc/qm) project. It specifically forks off from [d7eef30cf0aec2afaa3da7b9c05691ce9fc80b08](https://github.com/semyonc/qm/tree/d7eef30cf0aec2afaa3da7b9c05691ce9fc80b08).**
+
+## .NET Core port
+
+This repository targets .NET Core (3.1), and most supporting library target .NET Standard 2.1. It's currently still a WIP, but a working prototype version of the XQuery.Console project now works as a .NET Core 3.1. app.
+
+## Overview
+
 QueryMachine is database independent SQL engine for queries to 
 non-specific source of the data, such as XML, flat files, regular relational
 databases or all of above. It supports XML-Related Specifications 
