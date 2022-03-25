@@ -23,43 +23,32 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>TRACE;DEBUG;_NET_4_0</DefineConstants>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DefineConstants>TRACE;_NET_4_0</DefineConstants>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug IL|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Debug IL\</OutputPath>
     <DefineConstants>TRACE;DEBUG;DEBUG_IL</DefineConstants>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug Parallel|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Debug Parallel\</OutputPath>
     <DefineConstants>TRACE;DEBUG;PARALLEL</DefineConstants>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Parallel|AnyCPU' ">
     <OutputPath>bin\Release Parallel\</OutputPath>
     <DefineConstants>PARALLEL</DefineConstants>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Concurrent|AnyCPU' ">
     <OutputPath>bin\Concurrent\</OutputPath>
     <Optimize>true</Optimize>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-1|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Release-1\</OutputPath>
     <DefineConstants>TRACE;_NET_4_0</DefineConstants>
-    <CodeAnalysisLogFile>bin\Debug\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
     <Optimize>true</Optimize>
   </PropertyGroup>
   <PropertyGroup>
@@ -69,110 +58,53 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Debug %28x86%29\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_NET_4_0</DefineConstants>
-    <CodeAnalysisLogFile>bin\Debug\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <OutputPath>bin\x86\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_NET_4_0</DefineConstants>
-    <CodeAnalysisLogFile>bin\Debug\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
     <DefineConstants>TRACE;_NET_4_0</DefineConstants>
-    <CodeAnalysisLogFile>bin\Release\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug IL|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x86\Debug IL\</OutputPath>
     <DefineConstants>TRACE;DEBUG;DEBUG_IL</DefineConstants>
-    <CodeAnalysisLogFile>bin\Debug IL\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Parallel|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x86\Debug Parallel\</OutputPath>
     <DefineConstants>TRACE;DEBUG;PARALLEL</DefineConstants>
-    <CodeAnalysisLogFile>bin\Debug Parallel\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release Parallel|x86'">
     <OutputPath>bin\x86\Release Parallel\</OutputPath>
     <DefineConstants>PARALLEL</DefineConstants>
-    <CodeAnalysisLogFile>bin\Release Parallel\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Concurrent|x86'">
     <OutputPath>bin\x86\Concurrent\</OutputPath>
     <Optimize>true</Optimize>
-    <CodeAnalysisLogFile>bin\Concurrent\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-1|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x86\Release-1\</OutputPath>
     <DefineConstants>TRACE;_NET_4_0</DefineConstants>
     <Optimize>true</Optimize>
-    <CodeAnalysisLogFile>bin\Debug\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28x86%29|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x86\Debug %28x86%29\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_NET_4_0</DefineConstants>
-    <CodeAnalysisLogFile>bin\Debug\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release %28x86%29|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Release %28x86%29\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_NET_4_0</DefineConstants>
-    <CodeAnalysisLogFile>bin\Debug\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release %28x86%29|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x86\Release %28x86%29\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_NET_4_0</DefineConstants>
-    <CodeAnalysisLogFile>bin\Debug\CoreServices.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
-    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
-    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
-    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
     <Reference Update="System.Core">
@@ -195,11 +127,6 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers.0.3.261602\analyzers\dotnet\cs\Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers.Common.dll" />
-    <Analyzer Include="..\packages\Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers.0.3.261602\analyzers\dotnet\cs\Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers.dll" />
-    <Analyzer Include="..\packages\Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers.0.3.261602\analyzers\dotnet\cs\Microsoft.DotNet.UpgradeAssistant.Extensions.Default.CodeFixes.dll" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
