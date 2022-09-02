@@ -8,15 +8,9 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.Common;
-
-using MongoDB.Bson;
-using MongoDB.Driver;
-
-using DataEngine;
 using DataEngine.CoreServices.Data;
 using DataEngine.CoreServices;
 using Data.Remote;
@@ -57,30 +51,6 @@ namespace DataEngine.Export
                         }
                     }
 
-                case AccessorType.MongoDb:
-                    {
-                        MongoConnectionStringBuilder csb = new MongoConnectionStringBuilder();
-                        csb.ConnectionString = ConnectionString;
-                        MongoServer mongo = MongoServer.Create(csb);
-                        mongo.Connect();
-                        try
-                        {
-                            MongoDatabaseSettings settings = mongo.CreateDatabaseSettings(csb.DatabaseName);
-                            if (csb.Username != null)
-                                settings.Credentials = new MongoCredentials(csb.Username, csb.Password);
-                            if (mongo.DatabaseExists(csb.DatabaseName))
-                            {
-                                MongoDatabase database = mongo.GetDatabase(settings);
-                                return database.CollectionExists(TableName);
-                            }
-                            return false;
-                        }
-                        finally
-                        {
-                            mongo.Disconnect();
-                        }
-                    }
-
                 default:
                     return false;
             }            
@@ -101,22 +71,6 @@ namespace DataEngine.Export
                                 helper.FormatIdentifier(Util.SplitName(TableName)));
                             command.ExecuteNonQuery();
                         }
-                    }
-                    break;
-
-                case AccessorType.MongoDb:
-                    {
-                        MongoConnectionStringBuilder csb = new MongoConnectionStringBuilder();
-                        csb.ConnectionString = ConnectionString;
-                        MongoServer mongo = MongoServer.Create(csb);
-                        mongo.Connect();
-                        MongoDatabaseSettings settings = mongo.CreateDatabaseSettings(csb.DatabaseName);
-                        if (csb.Username != null)
-                            settings.Credentials = new MongoCredentials(csb.Username, csb.Password);
-                        MongoDatabase database = mongo.GetDatabase(settings);
-                        MongoCollection<BsonDocument> collection = database.GetCollection(TableName);
-                        collection.Drop();
-                        mongo.Disconnect();
                     }
                     break;
             }

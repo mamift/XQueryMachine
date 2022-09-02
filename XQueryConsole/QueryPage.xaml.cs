@@ -587,10 +587,6 @@ namespace XQueryConsole
                                 writer = new AdoProviderWriter(dlg.BatchMove);
                                 break;
 
-                            case DataEngine.AccessorType.MongoDb:
-                                writer = new MongoWriter(dlg.BatchMove);
-                                break;
-
                             default:
                                 throw new InvalidOperationException();
                         }                        
